@@ -1,0 +1,18 @@
+/* 
+    * {}
+Selector universal*/
+
+
+/*nombreDeLaEtiqueta { los estilos }*/
+
+form {
+    background-color: blue;
+}
+
+p {
+    background-color: brown;
+}
+
+.tituloPrincipal {
+    background-color: blueviolet;
+}

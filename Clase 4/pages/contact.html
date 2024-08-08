@@ -33,7 +33,7 @@
                 <h2>Formulario de contacto</h2>
             </div>
             <div>
-                <form>
+           <!--     <form>
                     <div class="form-group">
                         <label for="nombre">Nombre: (label)</label>
                         <input type="text" id="nombre" name="nombre" required>
@@ -53,8 +53,84 @@
                     <div class="form-group">
                         <button >Enviar</button>
                     </div>
-                </form>
-                
+                </form> -->
+            </div>
+            <div> <!--TIPOS DE INPUTS-->
+                <div><!--TEXTO-->
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <br>
+                <div><!--CONTRASEÑA-->
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <br>
+                <div><!--CORREO ELECTRÓNICO-->
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <br>
+                <div><!--NÚMERO-->
+                    <label for="age">Edad:</label>
+                    <input type="number" id="age" name="age" min="0" max="120">
+                </div>
+                <br>
+                <div><!--TELÉFONO-->
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <br>
+                <div><!--FECHA-->
+                    <label for="birthdate">Fecha de nacimiento:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+                <br>
+                <div><!--COLOR-->
+                    <label for="color">Elige un color:</label>
+                    <input type="color" id="color" name="color">
+                </div>
+                <br>
+                <div><!--ARCHIVO-->
+                    <label for="file">Subir archivo:</label>
+                    <input type="file" id="file" name="file">
+                </div>
+                <br>
+                <div><!--RADIO-->
+                    <fieldset>
+                        <legend>Selecciona tu género:</legend>
+                        <label><input type="radio" name="gender" value="male"> Hombre</label>
+                        <label><input type="radio" name="gender" value="female"> Mujer</label>
+                        <label><input type="radio" name="gender" value="other"> Otro</label>
+                    </fieldset>
+                </div>
+                <br>
+                <div><!--CHECKBOX-->
+                    <label><input type="checkbox" name="subscribe" value="newsletter"> Suscribirse al boletín</label>
+                    <label><input type="checkbox" name="subscribe" value="newsletter"> 1</label>
+                    <label><input type="checkbox" name="subscribe" value="newsletter"> 2</label>
+                    <label><input type="checkbox" name="subscribe" value="newsletter"> 3</label>
+                    <label><input type="checkbox" name="subscribe" value="newsletter"> 4</label>
+                </div>
+                <br>
+                <div><!--BOTÓN DE ENVÍO-->
+                    <input type="submit" value="Enviar">
+                </div>
+                <br>
+                <div><!--ÁREA DE TEXTO-->
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                </div>
+                <br>
+                <div><!--SELECCIÓN-->
+                    <label for="car">Elige un coche:</label>
+                    <select id="car" name="car">
+                        <option value="volvo">1</option>
+                        <option value="saab">2</option>
+                        <option value="mercedes">3</option>
+                        <option value="audi">4</option>
+                    </select>
+                </div>
             </div>
         </main> <!--Contenido principal-->
         <footer></footer> <!--Pie de página-->
