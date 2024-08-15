@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de práctica</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="contenedor-header">
+        <div class="header-logo">
+            <h1 class="titulo-principal">Título Principal</h1>
+            <h2 class="logo">LOGO</h2>
+        </div>
+        <div class="header-nav">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="about.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="contact-section">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-description">
+                Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros
+                utilizando el siguiente formulario o a través de nuestras redes sociales.
+            </p>
+            <form action="/submit" method="post" class="contact-form">
+                <label for="name" class="form-label">Nombre:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+
+                <label for="email" class="form-label">Correo electrónico:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+
+                <label for="message" class="form-label">Mensaje:</label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+
+                <button type="submit" class="form-button">Enviar</button>
+            </form>
+            <div class="contact-info">
+                <h3 class="info-title">Información de Contacto</h3>
+                <p class="info-item"><strong>Dirección:</strong> Calle Ejemplo 123, Ciudad, País</p>
+                <p class="info-item"><strong>Teléfono:</strong> (123) 456-7890</p>
+                <p class="info-item"><strong>Email:</strong> contacto@tuempresa.com</p>
+                <p class="info-item"><strong>Redes Sociales:</strong></p>
+                <ul class="social-media-list">
+                    <li><a href="https://facebook.com" class="social-media-link">Facebook</a></li>
+                    <li><a href="https://twitter.com" class="social-media-link">Twitter</a></li>
+                    <li><a href="https://instagram.com" class="social-media-link">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
