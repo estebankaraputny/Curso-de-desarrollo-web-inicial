@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .nombre-de-clase {} --> llamar a una clase */
+
+.contenedor-header{
+    background-color: black;
+    color: white;
+}
+
+.titulo-principal{
+    font-size: 20px; /*Cambiar tamaño de fuente*/
+    font-family: Arial, Helvetica, sans-serif; /*Cambiar tipo de fuente*/
+}
+
+.div-hola{
+    background-color: blueviolet;
+    width: 50%;
+    height: 500px;
+}
+
+.div-chau{
+    background-color: blue;
+    width: 100%; /* Define el ancho de un elemento */
+    height: 200px; /* Define el alto de un elemento*/
+    padding: 30px; /*Es la distancia desde el borde de un elemento hasta su contenido.*/
+    margin: 100px; /*Es la distancia entre un elemento y otro*/
+    text-align: center; /*Alinear el texto*/
+    border: 3px solid green; /*Colocar bordes al elemento*/
+}
+
+.texto{
+    color: white;
+    font-size: 100px;
+}
+
+.imagen{
+    width: 50%;
+    height: 200px;
+}
