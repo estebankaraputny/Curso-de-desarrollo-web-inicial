@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navegation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+   
+}
+
+.list-link{
+    list-style: none;
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.item-nav{
+    width: 20%;
+}
+
+.boton-nav{
+    text-decoration: none;
+    background-color: chocolate;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.boton-nav:hover{
+    transition: .5s;
+    background-color: rgb(231, 156, 103);
+    color: #000;
+}
+
+.content-bienvenida{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.content-bienvenida h1{
+    color: chocolate; 
+    font-size: 2.8em; /* Tamaño grande */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid chocolate; /* Línea decorativa */
+    padding-bottom: 10px;
+}
+
+.content-bienvenida p{
+    font-family: 'Nunito', sans-serif;
+    color: #444444; /* Gris oscuro */
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px; /* Ajusta el ancho del párrafo */
+    margin: 0 auto;
+}
+
+.content-historia{
+    padding: 30px;
+    text-align: center;
+}
+
+.content-historia h2{
+    color: chocolate; 
+    font-size: 2em; /* Tamaño grande */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.content-historia p{
+    font-family: 'Nunito', sans-serif;
+    color: #444444; /* Gris oscuro */
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.content-mi-vi{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div-mi-vi{
+    width: 45%;
+    height: 250px;
+    background-color: rgb(231, 156, 103);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.div-mi-vi h2{
+    font-size: 2em; /* Tamaño grande */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.div-mi-vi p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+.div-mi-vi:hover{
+    background-color: chocolate;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
