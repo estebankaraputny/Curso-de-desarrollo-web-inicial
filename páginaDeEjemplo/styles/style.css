@@ -5,130 +5,358 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: #f4f4f4; /* Fondo de la página más claro para contraste */
+}
 
-.navegation{
+.navegation {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
-}
-.logo{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-   
+    background-image:linear-gradient(-60deg, transparent, #ffd60a 14%, #e0772a 28%, #ff6f00 42%, #ff6a00 56%, #e34d4d 70%, #ff0000 84%, rgb(255 9 0 / 0%)); /* Degradado de colores cálidos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-.list-link{
+.logo {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff; /* Borde blanco alrededor del logo */
+}
+
+.list-link {
     list-style: none;
     display: flex;
-    width: 45%;
+    width: 50%;
     justify-content: space-around;
     align-items: center;
     margin: 0;
 }
 
-.item-nav{
-    width: 20%;
+.item-nav {
+    width: auto;
 }
 
-.boton-nav{
+.boton-nav {
     text-decoration: none;
-    background-color: chocolate;
-    color: #fff;
+    background-color: #df5b14; /* Color de fondo de los botones */
+    color: #ffffff;
     font-weight: 600;
-    padding: 15px;
-    width: 100%;
-    border-radius: 10px;
+    padding: 15px 20px; /* Espaciado mejorado */
+    border-radius: 20px; /* Bordes más redondeados */
     display: inline-block;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transiciones suaves */
 }
 
-.boton-nav:hover{
-    transition: .5s;
-    background-color: rgb(231, 156, 103);
-    color: #000;
+.boton-nav:hover {
+    background-color: #feb47b; /* Color de fondo en hover */
+    color: #333; /* Color de texto en hover */
+    transform: scale(1.05); /* Efecto de aumento en hover */
 }
 
-.content-bienvenida{
+.content-bienvenida {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 30px;
+    padding: 50px 20px; /* Más relleno superior e inferior */
+    background: #fff; /* Fondo blanco para el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+    margin-top: 20px; /* Espaciado superior */
 }
 
-.content-bienvenida h1{
-    color: chocolate; 
+.content-bienvenida h1 {
+    color: #ff7e5f; /* Color del texto del título */
     font-size: 2.8em; /* Tamaño grande */
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
-    border-bottom: 2px solid chocolate; /* Línea decorativa */
+    border-bottom: 2px solid #ff7e5f; /* Línea decorativa con el color del título */
     padding-bottom: 10px;
 }
 
-.content-bienvenida p{
+.content-bienvenida p {
     font-family: 'Nunito', sans-serif;
-    color: #444444; /* Gris oscuro */
+    color: #444; /* Gris oscuro */
     font-size: 1.2em;
     line-height: 1.8;
     text-align: center;
-    max-width: 800px; /* Ajusta el ancho del párrafo */
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.content-historia{
+.content-historia {
     padding: 30px;
     text-align: center;
 }
 
-.content-historia h2{
-    color: chocolate; 
-    font-size: 2em; /* Tamaño grande */
+.content-historia h2 {
+    color: #ff7e5f; /* Color del texto del subtítulo */
+    font-size: 2em;
     margin-bottom: 20px;
     padding-bottom: 10px;
     font-weight: 700;
 }
 
-.content-historia p{
+.content-historia p {
     font-family: 'Nunito', sans-serif;
-    color: #444444; /* Gris oscuro */
+    color: #444;
     font-size: 1.2em;
     line-height: 1.8;
 }
 
-.content-mi-vi{
+.content-mi-vi {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap; /* Asegura que se acomode en pantallas más pequeñas */
+    padding: 20px;
 }
 
-.div-mi-vi{
+.div-mi-vi {
     width: 45%;
-    height: 250px;
-    background-color: rgb(231, 156, 103);
+    min-height: 250px;
+    background-color: #feb47b; /* Color de fondo */
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 15px; /* Bordes más redondeados */
     text-align: center;
     color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
 }
 
-.div-mi-vi h2{
-    font-size: 2em; /* Tamaño grande */
+.div-mi-vi h2 {
+    font-size: 2em;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
-.div-mi-vi p{
+.div-mi-vi p {
     font-family: 'Nunito', sans-serif;
     font-size: 1em;
     line-height: 1.8;
 }
 
-.div-mi-vi:hover{
-    background-color: chocolate;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+.div-mi-vi:hover {
+    background-color: #ff7e5f; /* Color de fondo en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+}
+
+/* Sección de Importancia de la Salud Mental */
+.importance-section {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.importance-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.importance-text {
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+.importance-text h2 {
+    color: #ff7e5f;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.importance-text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #444;
+}
+
+.importance-video {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.importance-video iframe {
+    width: 100%;
+    height: 315px; /* Tamaño estándar para videos */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Sección de Servicios */
+.services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    flex: 1 1 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Sección de Conoce a Nuestro Equipo */
+.title-team{
+    color: #ff7e5f; /* Color del texto del subtítulo */
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.team-section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.content-team{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.team-member {
+    flex: 1 1 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Sección de Contacto */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-right: 3rem;
+}
+.maps{
+    height: 250px;
+
+}
+
+.formulario {
+    max-width: 600px;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.boton-form {
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-form:hover {
+    background-color: #feb47b;
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-link {
+    color: #feb47b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
