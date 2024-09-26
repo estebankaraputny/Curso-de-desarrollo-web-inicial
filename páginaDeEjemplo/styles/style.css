@@ -215,7 +215,7 @@ body {
 }
 
 .service-item {
-    flex: 1 1 30%;
+    width: 400px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
@@ -359,3 +359,39 @@ body {
 .footer-link:hover {
     text-decoration: underline;
 }
+
+
+@media (max-width: 700px) { 
+    /*ACÁ VA EL CÓDIGO CSS*/
+    .inicio{
+        background-color: #ff0000;
+    }
+
+    .content-mi-vi{
+        flex-direction: column;
+
+    }
+
+    .div-mi-vi{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .importance-content{
+        flex-direction: column-reverse;
+    }
+
+    .content-team{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contact-section{
+        flex-direction: column;
+    }
+
+}
+
+/*    @media (max-width)  and (max-width)   {
+        
+    }*/
